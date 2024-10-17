@@ -1,0 +1,231 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/imagens/backgroundnetlfix.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+
+  
+  .login-container {
+    background: rgba(0, 0, 0, 0.7);
+    max-width: 20%;
+    height: 60%;
+    padding: 2%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    align-items: center;
+    width: 100%;
+    display: auto;
+    flex-direction: column;
+    align-items: center;
+
+    }
+
+  
+  .logo {
+    text-align:auto;
+    margin-bottom: 40px;
+  }
+
+  .logo img {
+    width: 150px; 
+    margin-left: 10%;
+  }
+
+  
+  .form-group {
+  width: 100%;
+  margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+  }
+
+  .form-group input {
+    width: 80%;
+    padding: 10px;
+    background: #1c1a1a0a;
+    border-color:#e9dfdf93;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .login-button{
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 16px;
+        width: 80%;
+        padding: 10px;            
+        background: #e50914;
+        border: none;
+        border-radius: 6px;         
+        margin-top: 10px;
+        margin: 0 auto;
+        box-sizing: border-box;       
+        display: block;
+        
+    }
+    
+    .login-button:hover {
+        background-color: #fd1900; /* Cor de fundo no hover */
+    }
+    
+  .codigo-button {
+      width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #544e4ec0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: block;
+
+      
+  }
+  
+  .login-button:hover {
+    background: #f40612;
+  }
+  .codigo-button:hover {
+    background: #372c2d00;
+  }
+  .esquecisenha {
+      margin-top: 20px;
+      font-size: 14px;
+      display: flex;
+      text-align: center;
+  }
+  .esquecisenha a {
+    color: #fdf4f4;
+    text-decoration: none;
+    margin: 0 auto; 
+    display: inline-block;
+
+  }
+
+  
+  .separator {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-left: auto;
+  }
+  .entrar{
+      text-align: left;
+      font-size: 30px;
+      margin-left: 10%;
+      
+  }
+  .lembre-se {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 15px;
+    color: #b3b3b3;
+    margin-left: 35px;
+    margin-top: 20px;
+    
+    
+  }
+
+  .lembre-se input {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    color: #1c1a1a22;
+    background-color: #1c1a1a0d;
+  }
+  .assinar{
+      color: white;
+      text-decoration: none;
+  }
+  .assinar-agora{
+      color: #948888fe;
+      margin-left: 37px;
+      
+  }
+  .info-container{
+      background-color: #000000;
+  }
+  .num{
+      color: #decfcf;
+  }
+ 
+  nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 10px;
+  box-sizing: border-box;
+  align-content: center;
+  }
+
+  nav li a {
+  text-decoration:underline;
+  color: #ece9e9;
+  padding: 10px;
+  }
+
+  nav li a:hover {
+  background-color: #e0e0e0;
+  }
+  .rodape {
+  background-color: #000000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top:90px ;
+  }
+
+  .rodape ul {
+      list-style: none;
+      padding: 0;
+  }
+
+  .rodape li {
+      margin-bottom: 10px;
+  }
+
+  .rodape a {
+      text-decoration:underline;
+      color: #eee2e2;
+
+  }
+  .idioma{
+
+    border: none; /* Sem borda */
+    padding: 10px 25px; /* Espaçamento interno */
+    font-size: 16px;
+    cursor: pointer; /* Mão ao passar o mouse */
+    appearance: none; /* Remove o estilo padrão do select */
+    -webkit-appearance: none; /* Para navegadores baseados em WebKit */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }

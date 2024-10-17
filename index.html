@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" href="/imagens/netflix.svg" type="image/x-icon">
+
+    
+    <link rel="stylesheet" href="index.css">
+   
+    
+    </head>
+    <body>
+      <div class="logo">
+        <img src="/imagens/netflixlogo.png" alt="Netflix Logo">
+      </div>
+      <div class="login-container">
+        <form>
+            <h1 class="entrar">Entrar</h1>
+
+            <div class=" form-group">
+            <label for="email"></label>
+            <input type="text" id="email" name="email" 
+              placeholder="Email ou numero de celular" 
+              data-pt="Email ou número de celular" 
+              data-en="Email or phone number">
+          </div>
+
+          <div class="form-group">
+            <label for="password"></label>
+            <input type="password" id="password" name="password"
+             placeholder="Senha"
+             data-pt="Senha" 
+             data-en="Password">
+          </div>
+
+          <a href="segundatela.html" class="translatable login-button" data-pt="Entrar" data-en="Login" >Entrar</a>
+          <p class="separator">OU</p>
+          <button  type="submit" class="translatable codigo-button"  data-pt="Usar um codigo de acesso" data-en="use access code">Usar um codigo de acesso</button>
+
+          <div class="esquecisenha">
+          <a class="translatable" data-pt="Esqueceu a senha?" data-en="Forgot your password?" href="#">Esqueceu a senha ? </a>
+          </div>
+
+          <div class="lembre-se">
+            <input type="checkbox" id="remember" name="remember">
+            <label class="translatable" data-pt="lembre-se de mim" data-en="Remember me" for="remember">Lembre-se de mim</label>
+          </div>
+
+          <p class="translatable assinar-agora" data-pt="Novo por aqui ?" data-en="New to Netflix?">
+            Novo por aqui? 
+            <a class="translatable assinar" data-pt="Assine agora." data-en="Sign up now" href="#">
+              Assine agora.
+          </a>
+        </p>
+        </form>     
+      </div>
+
+        <footer class="rodape">
+            <div class="rodape">
+                <ul>
+                    <li class="translatable" data-pt="Duvidas? Ligue" data-en="Questions? Call" >Duvidas? Ligue : <a href="#">0800 591 2876</a></li>
+                    <li><a  class="translatable" data-pt=" Perguntas Frequentes " data-en=" FAQ"   href="#">Perguntas Frequentes</a></li>
+                    <li><a  class="translatable" data-pt="Preferências de cookies " data-en=" Cookie preferences"    href="#">Preferências de cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="rodape">
+              <ul>
+                <li><a class="translatable"data-pt="Central de ajuda"data-en="Help center"href="#">Central de ajuda</a></li>
+                  <li><a  class="translatable" data-pt=" Informações corporativas " data-en=" Corporate information " href="#">Informações corporativas</a></li>
+              </ul>
+          </div>  
+
+            <div class="rodape">
+                <ul>
+                    <li><a  class="translatable" data-pt=" Termos de uso " data-en=" Term of use "href="#">Termos de Uso</a></li>
+                    <li><a  class="translatable" data-pt=" Privacidade " data-en=" Privacy " href="#">Privacidade</a></li>
+                </ul>
+            </div>
+
+          <div class="idioma">
+              <select class="idioma-selector" onchange="mudarIdioma(this.value)">
+                  <option value="pt">Portugues</option>
+                  <option value="en">English</option>
+                  
+              </select>
+          </div>
+        </footer>
+        
+      <script src="idioma.js"></script>
+    </body>
+    </html>
+    
