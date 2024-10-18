@@ -16,46 +16,43 @@
         <img src="/imagens/netflixlogo.png" alt="Netflix Logo">
       </div>
       <div class="login-container">
-        <form>
-            <h1 class="entrar">Entrar</h1>
-
-            <div class=" form-group">
-            <label for="email"></label>
-            <input type="text" id="email" name="email" 
-              placeholder="Email ou numero de celular" 
-              data-pt="Email ou número de celular" 
-              data-en="Email or phone number">
-          </div>
-
-          <div class="form-group">
-            <label for="password"></label>
-            <input type="password" id="password" name="password"
-             placeholder="Senha"
-             data-pt="Senha" 
-             data-en="Password">
-          </div>
-
-          <a href="segundatela.html" class="translatable login-button" data-pt="Entrar" data-en="Login" >Entrar</a>
-          <p class="separator">OU</p>
-          <button  type="submit" class="translatable codigo-button"  data-pt="Usar um codigo de acesso" data-en="use access code">Usar um codigo de acesso</button>
-
-          <div class="esquecisenha">
-          <a class="translatable" data-pt="Esqueceu a senha?" data-en="Forgot your password?" href="#">Esqueceu a senha ? </a>
-          </div>
-
-          <div class="lembre-se">
-            <input type="checkbox" id="remember" name="remember">
-            <label class="translatable" data-pt="lembre-se de mim" data-en="Remember me" for="remember">Lembre-se de mim</label>
-          </div>
-
-          <p class="translatable assinar-agora" data-pt="Novo por aqui ?" data-en="New to Netflix?">
-            Novo por aqui? 
-            <a class="translatable assinar" data-pt="Assine agora." data-en="Sign up now" href="#">
-              Assine agora.
-          </a>
-        </p>
-        </form>     
-      </div>
+        <form id="loginForm">
+            <div class="error-message" id="errorMessage">Usuário ou senha incorretos</div>
+            <h1 class="entrar translatable" data-pt="ENTRAR" data-en="login">Entrar</h1>
+    
+            <div class="form-group">
+                <label for="email"></label>
+                <input type="text" id="email" name="email" placeholder="Email ou numero de celular" data-pt="Email ou número de celular" data-en="Email or phone number" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="Senha" data-pt="Senha" data-en="Password" required>
+            </div>
+    
+            <button type="submit" class="translatable login-button" data-pt="Entrar" data-en="Login">Entrar</button>
+            
+            <p class="separator translatable" data-pt="ou" data-en="or">OU</p>
+            
+            <button type="button" class="translatable codigo-button" data-pt="Usar um código de acesso" data-en="use access code">Usar um código de acesso</button>
+    
+            <div class="esquecisenha">
+                <a class="translatable" data-pt="Esqueceu a senha?" data-en="Forgot your password?" href="#">Esqueceu a senha?</a>
+            </div>
+    
+            <div class="lembre-se">
+                <input type="checkbox" id="remember" name="remember">
+                <label class="translatable" data-pt="Lembre-se de mim" data-en="Remember me" for="remember">Lembre-se de mim</label>
+            </div>
+    
+            <p class="translatable assinar-agora" data-pt="Novo por aqui?" data-en="New to Netflix?">
+                Novo por aqui? 
+                <a class="translatable assinar" data-pt="Assine agora." data-en="Sign up now" href="#">
+                  Assine agora.
+                </a>
+            </p>
+        </form>
+    </div>
 
         <footer class="rodape">
             <div class="rodape">
@@ -90,6 +87,7 @@
         </footer>
         
       <script src="idioma.js"></script>
+      <script src="login.js"></script>
     </body>
     </html>
     
