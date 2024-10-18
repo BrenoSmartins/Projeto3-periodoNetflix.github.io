@@ -1,2 +1,2 @@
-uuario : usuario@email.com
+usuario : usuario@email.com
 senha : 123456
